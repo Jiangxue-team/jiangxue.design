@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "bootstrap": "pnpm i --shamefully-hoist --no-frozen-lockfile",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview .",
+    "server": "node .output/server/index.mjs",
+    "build": "nuxi build",
+    "lint": "prettier --write .",
+    "info": "nuxi info"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.3.0",
+    "@types/node": "^18.11.18",
+    "nuxt": "^3.0.0",
+    "prettier": "^2.8.3",
+    "sass": "^1.57.1",
+    "vite-plugin-vue-setup-extend": "^0.4.0"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.0.0",
+    "bootstrap": "5.3.0-alpha1",
+    "swiper": "^8.4.5"
+  }
+}

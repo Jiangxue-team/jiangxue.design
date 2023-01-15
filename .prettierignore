@@ -1,0 +1,14 @@
+.output
+node_modules
+
+.nuxt
+.vscode
+
+/dist/*
+/.output/*
+/node_modules/**
+
+**/*.svg
+
+/public/*
+pnpm-lock.yaml

@@ -1,0 +1,48 @@
+:root {
+  height: 100vh;
+  margin: 0;
+}
+.dropdown-toggle::after {
+  border-right: 0px;
+}
+
+// 自定义
+.cu-header {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 59px rgb(0 0 0 / 5%);
+}
+.cu-swiper_info {
+  font-size: 15px;
+  text-align: left;
+  border: 1px solid red;
+  color: #7D7D7D;
+  font-width: 500;
+  h1 {
+    font-size: 16px;
+    color: #000000;
+  }
+  h2 {
+    font-size: 15px;
+    color: #000000;
+  }
+}
+// Swiper
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: 60vh !important;
+  background: #F9F9F9;
+  /* Center slide text vertically */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
