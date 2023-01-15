@@ -26,6 +26,19 @@
     color: #000000;
   }
 }
+
+.cu-more_back {
+  min-width: 400px;
+}
+
+.cu-more {
+  width: 160px;
+}
+
+.cu-background_more {
+  background-image: url("/public/more-back.png");
+  background-position: 0% -195%;
+}
 // Swiper
 .swiper {
   width: 100%;
@@ -35,7 +48,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  height: 60vh !important;
+  height: 67vh !important;
   background: #F9F9F9;
   /* Center slide text vertically */
 }
