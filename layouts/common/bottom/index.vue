@@ -31,7 +31,7 @@
 <script setup>
 // 使用 useAsyncData 函数发起异步请求
 const { data: equalQuery } = await useAsyncData('equal', () => {
-  // 返回数据，也可以（.where({ director: 'Hayao Miyazaki' }) 来进行过滤）
-  return queryContent('/').find()
+  // 返回 /more 目录下的数据，也可以（.where({ director: 'Hayao Miyazaki' }) 来进行过滤）
+  return queryContent('more/').find()
 })
 </script>

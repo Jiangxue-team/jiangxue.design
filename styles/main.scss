@@ -14,7 +14,6 @@
 .cu-swiper_info {
   font-size: 15px;
   text-align: left;
-  border: 1px solid red;
   color: #7D7D7D;
   font-width: 500;
   h1 {
@@ -39,6 +38,42 @@
   background-image: url("/public/more-back.png");
   background-position: 0% -195%;
 }
+
+.cu-banner_page_num {
+  position: absolute;
+  background-image: url(/public/banner-page_number.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: auto; */
+  width: 107px;
+  height: 107px;
+  right: 4vh;
+  margin-top: 29%;
+  color: white;
+  font-size: 45px;
+  p {
+    margin-left: -7px;
+    margin-top: -5px;
+  }
+  span {
+    font-size: 15px;
+    margin-top: 6px;
+  }
+}
+
+.cu-banner_page_font {
+  position: absolute;
+  background-image: url(/public/banner-page_font.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: auto; */
+  width: 138px;
+  height: 192px;
+  right: 4vh;
+  background-size: 132px;
+  color: white;
+  font-size: 45px;
+}
 // Swiper
 .swiper {
   width: 100%;
@@ -49,8 +84,10 @@
   text-align: center;
   font-size: 18px;
   height: 67vh !important;
-  background: #F9F9F9;
-  /* Center slide text vertically */
+  background: #ffffff;
+  background-image: url("/public/banner-back.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .swiper-slide img {

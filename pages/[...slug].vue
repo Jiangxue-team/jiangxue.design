@@ -1,32 +1,38 @@
+<script setup>
+// 使用 useAsyncData 函数发起异步请求
+const { data: equalQueryBanner } = await useAsyncData('equal1', () => {
+  // 返回数据，也可以（.where({ director: 'Hayao Miyazaki' }) 来进行过滤）
+  return queryContent('banner/').find()
+})
+</script>
 <template>
-  <swiper
-      :pagination="{type: 'fraction',}"
-      :navigation="true"
-      :modules="modules"
-      class="mySwiper"
-  >
-    <swiper-slide>
-<!--
+  <swiper class="mySwiper">
+    <swiper-slide v-for="movie in equalQueryBanner.slice(0, 5)" :key="movie.id">
       <div class="row h-100 mx-5">
-        <div class="col-4 cu-swiper_info my-auto" style="border: 1px solid red">
-            <h1>江雪非营利网络报告（内刊）。</h1>
-            <p>以项目的工程计划作为封面，完善了以项目为核心的技术发展体系的设计形象。</p>
+        <div class="col-2 cu-swiper_info my-auto">
+            <h1>{{ movie.title }}</h1>
+            <p>{{ movie.description }}</p>
             <h2>Client</h2>
-            <p>江雪非营利网络</p>
+            <p>{{ movie.Client }}</p>
             <p2>Art Director</p2>
-            <p>
-              水清 一色
-            </p>
+            <p>{{ movie.ArtDirector }}</p>
             <h2>Designer</h2>
-            <p>清律、清铭酒</p>
+            <p>{{ movie.Designer }}</p>
             <h2>Producer</h2>
-            <p>-</p>
+            <p>{{ movie.Producer }}</p>
+            <h2>{{ movie.state }}</h2>
         </div>
-        <div class="col-8" style="border: 1px solid red">8</div>
+        <div class="col-8">
+          <div style="display: block;height: 100%;width: 100%;background-size: contain;" :style="{'background-image': `url(${movie.image})`,'background-position':'center', 'background-repeat':'no-repeat'}"></div>
+        </div>
+        <div class="cu-banner_page_num d-flex">
+          <p>{{ movie.id }}</p>
+          <span>/ 7</span>
+        </div>
+        <div class="cu-banner_page_font d-flex"></div>
       </div>
--->
     </swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
+
   </swiper>
 </template>
 <script>
@@ -36,22 +42,14 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper styles
 import "swiper/css";
 
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-
-// import required modules
-import { Pagination, Navigation } from "swiper";
-
 export default {
   components: {
     Swiper,
     SwiperSlide,
   },
   setup() {
-    return {
-      modules: [Pagination, Navigation],
-    };
+    return {};
   },
 };
 </script>
+
