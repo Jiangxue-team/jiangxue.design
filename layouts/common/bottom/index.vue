@@ -9,8 +9,8 @@
 
       <div class="navbar-collapse collapse" id="navbarCollapse">
         <ul class="navbar-nav w-100" style="display: block;">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-3 w-100" v-if="equalQuery">
-            <div class="col mx-4" v-for="movie in equalQuery.slice(0, 5)" :key="movie.id">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-3 w-100 cu-w-100" v-if="equalQuery">
+            <div class="col mx-4 cu-mx-4" v-for="movie in equalQuery.slice(0, 5)" :key="movie.id">
               <div class="shadow-sm pe-md-5 cu-more_back" style="background: red;display: contents;">
                 <svg class="bd-placeholder-img card-img-top cu-more_back" :style="{'background-image': `url(${movie.image})`,'background-position':'center', 'background-repeat':'no-repeat'}" width="100%" height="230" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
                 <div class="card-body w-100 my-3">

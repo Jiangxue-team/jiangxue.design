@@ -16,6 +16,9 @@
   text-align: left;
   color: #7D7D7D;
   font-width: 500;
+  @media screen and (max-width: 1435px) {
+    width: 28.666667%;
+  }
   h1 {
     font-size: 16px;
     color: #000000;
@@ -26,17 +29,80 @@
   }
 }
 
+// more list
 .cu-more_back {
   min-width: 400px;
+  @media screen and (max-width: 2315px) {
+    min-width: 370px;
+  }
+  @media screen and (max-width: 2145px) {
+    min-width: 340px;
+    max-height: 205px;
+  }
+  @media screen and (max-width: 1953px) {
+    min-width: 310px;
+    max-height: 200px;
+  }
+  @media screen and (max-width: 1779px) {
+    min-width: 280px;
+    max-height: 160px;
+  }
+  @media screen and (max-width: 2010px) {
+    min-width: 300px;
+    max-height: 165px;
+  }
+  @media screen and (max-width: 1600px) {
+    min-width: 220px;
+    max-height: 130px;
+  }
+  @media screen and (max-width: 1435px) {
+    min-width: 140px;
+    max-height: 130px;
+  }
 }
 
+.cu-mx-4 {
+  @media screen and (max-width:1435px) {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+  }
+  @media screen and (max-width: 1600px) {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+  }
+}
+.cu-w-100 {
+  @media screen and (max-width: 1435px) {
+    width: 110% !important;
+  }
+}
 .cu-more {
   width: 160px;
+  @media screen and (max-width: 1700px) {
+    width: 80px;
+  }
 }
-
+.cu-mb_5 {
+  margin-bottom: 3rem !important;
+  @media screen and (max-width: 1435px) {
+    margin-bottom: 2rem !important;
+  }
+}
 .cu-background_more {
   background-image: url("/public/more-back.png");
   background-position: 0% -195%;
+  @media screen and (max-width: 1953px) {
+    background-position: 0% -264%;
+  }
+  @media screen and (max-width: 1779px) {
+    background-position: 0% 796%;
+  }
+  @media screen and (max-width: 2010px) {
+    background-position: 0% 90px;
+  }
+  @media screen and (max-width: 1675px) {
+    background-position: 0% 60px;
+  }
 }
 
 .cu-banner_page_num {
@@ -51,6 +117,30 @@
   margin-top: 29%;
   color: white;
   font-size: 45px;
+  @media screen and (max-width: 2145px) {
+    margin-top: 32%;
+  }
+  @media screen and (max-width: 1953px) {
+    margin-top: 35%;
+  }
+  @media screen and (max-width: 1779px) {
+    margin-top: 38%;
+  }
+  @media screen and (max-width: 1600px) {
+    margin-top: 42% !important;
+  }
+  @media screen and (max-width: 2010px) {
+    margin-top: 26%;
+  }
+  @media screen and (max-width: 1435px) {
+    margin-top: 30%;
+  }
+  @media screen and (max-width: 1435px) {
+    margin-top: 23%;
+  }
+  @media screen and (max-width: 1280px) {
+    margin-top: 35% !important;
+  }
   p {
     margin-left: -7px;
     margin-top: -5px;
@@ -60,7 +150,7 @@
     margin-top: 6px;
   }
 }
-
+// Team slogan
 .cu-banner_page_font {
   position: absolute;
   background-image: url(/public/banner-page_font.svg);
@@ -73,6 +163,9 @@
   background-size: 132px;
   color: white;
   font-size: 45px;
+  @media screen and (max-width: 2145px) {
+    height: 132px;
+  }
 }
 // Swiper
 .swiper {
@@ -88,6 +181,24 @@
   background-image: url("/public/banner-back.png");
   background-position: center;
   background-repeat: no-repeat;
+  @media screen and (max-width: 2010px) {
+    height: 60vh !important;
+    background-size: 110%;
+  }
+  @media screen and (max-width: 1600px) {
+    height: 70vh !important;
+    background-size: 165%;
+  }
+  @media screen and (max-width: 1435px) {
+    background-size: 130%;
+  }
+  @media screen and (max-width: 1435px) {
+    background-size: 100%
+  }
+  @media screen and (max-width: 1280px) {
+    height: 60vh !important;
+    background-size: 150%
+  }
 }
 
 .swiper-slide img {
