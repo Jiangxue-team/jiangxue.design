@@ -6,7 +6,6 @@
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="navbar-collapse collapse" id="navbarCollapse">
         <ul class="navbar-nav w-100" style="display: block;">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-3 w-100 cu-w-100" v-if="equalQuery">
