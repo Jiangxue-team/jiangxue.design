@@ -3,19 +3,19 @@
     <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img :src="image" alt="Jiangxue Design" />
+          <img src="/logo.svg" alt="Jiangxue Design" />
         </a>
         <!--      面包屑-->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!--      抽屉导航-->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
-              <img :src="image" alt="Jiangxue Design" />
+              <img src="/logo.svg" alt="Jiangxue Design" />
             </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-back" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <!--        链接-->
           <div class="offcanvas-body">
@@ -49,7 +49,6 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-
               <li class="nav-item mx-2">
                 <a class="nav-link" aria-current="page" href="#">对话</a>
               </li>
@@ -71,15 +70,9 @@
 </template>
 
 <script>
-import image from '~/public/logo.svg'
 
 export default {
   name: 'test-header',
-  setup() {
-    return {
-      image
-    }
-  },
   mounted() {
     if (process.client) {
       import('bootstrap')

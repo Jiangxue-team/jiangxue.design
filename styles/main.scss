@@ -26,25 +26,52 @@
   }
 }
 
+@media (min-width: 992px) {
+
+}
+
 // more list
+.cu-nav_bottom_more {
+  display: none;
+}
 .cu-more_back {
   min-width: 400px;
 }
 
-.cu-mx-4 {
-}
-.cu-w-100 {
-
-}
 .cu-more {
-  width: 160px;
+  p {
+    margin-top: 0 !important;
+    text-align: left;
+    font-size: 0.9vw;
+    height: 1.7vw;
+    padding-top: 0.5vw;
+    width: 13vw;
+  }
+  img {
+    height: auto;
+    display: block;
+    width: 13vw;
+    margin-right: 3vw;
+  }
+}
+.cu-more_list {
+  padding-left: 1vw;
+}
+.cu-more_button {
+  width: 9vw;
+}
+.cu-more_nav {
+  display: block;
+  border: 1px solid;
+  height: 9vw;
 }
 .cu-mb_5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 1.5vw !important;
 }
 .cu-background_more {
   background-image: url("/public/more-back.png");
-  background-position: 0% -195%;
+  background-size: cover;
+  padding: 0 !important;
 }
 
 .cu-banner_page_num {
@@ -52,13 +79,14 @@
   background-image: url(/public/banner-page_number.svg);
   background-position: center;
   background-repeat: no-repeat;
-  /* height: auto; */
-  width: 107px;
-  height: 107px;
-  right: 4vh;
-  margin-top: 29%;
+  background-size: cover;
+  width: 4vw;
+  height: 4vw;
+  right: 4vw;
+  margin-top: 29vh;
+  bottom: 3vw;
   color: white;
-  font-size: 45px;
+  font-size: 1.5vw;
   p {
     margin-left: -7px;
     margin-top: -5px;
@@ -91,11 +119,13 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  height: 67vh !important;
+  height: 37vw !important;
   background: #ffffff;
   background-image: url("/public/banner-back.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid red;
 }
 
 .swiper-slide img {
@@ -103,4 +133,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.navbar-brand_conceal {
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+  border: 0;
 }
