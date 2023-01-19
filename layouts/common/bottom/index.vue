@@ -1,19 +1,16 @@
 <template>
-  <!-- 创建导航栏并固定底部，在屏幕宽度小于 navbar-expand-sm 576px 时将导航栏切换成折叠模式。-->
-    <nav class="navbar fixed-bottom navbar-expand-lg cu-background_more" aria-label="Offcanvas navbar large">
+  <!-- 创建导航栏并固定底部，在屏幕宽度小于 navbar-expand-sm 1400px  时将导航栏切换成折叠模式。-->
+    <nav class="navbar fixed-bottom navbar-expand-xxl cu-background_more" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="/logo.svg" class="cu-nav_bottom_more" alt="Jiangxue Design" />
-        </a>
         <!--  面包屑-->
         <button class="navbar-toggler" @click="toggleOffcanvas"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar3" aria-controls="offcanvasNavbar3">
-          <span class="navbar-toggler-icon"></span>
+          <img src="/all-design.svg" class="cu-nav_bottom_more" alt="Jiangxue Design" />
         </button>
         <!--      抽屉导航-->
         <div class="offcanvas offcanvas-end" :class="offcanvasClass" tabindex="-1" id="offcanvasNavbar3" aria-labelledby="offcanvasNavbar3Label">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbar3Label">
-              <img src="/logo.svg" alt="Jiangxue Design" />
+              <img src="/all-design.svg" alt="Jiangxue Design" />
             </h5>
             <button type="button" class="btn-close btn-close-back" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>

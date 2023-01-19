@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid cu-header cu-mb_5">
-    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+  <div class="container-fluid cu-header">
+    <nav class="navbar navbar-expand-xxl" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="/logo.svg" alt="Jiangxue Design" />
