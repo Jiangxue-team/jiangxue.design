@@ -46,6 +46,17 @@
 }
 
 .cu-more {
+  @media screen and (max-width: 1400px) {
+    img {
+      width: 250px !important;
+    }
+    p {
+      width: 250px !important;
+      font-size: 18px !important;
+      margin-bottom: 3rem;
+      margin-top: 9px !important;
+    }
+  }
   p {
     margin-top: 0 !important;
     text-align: left;
@@ -66,6 +77,9 @@
   @media screen and (max-width: 1440px) {
     width: 80%;
   }
+  @media screen and (max-width: 1400px) {
+    display: block;
+  }
 }
 .cu-more_button {
   width: 9vw;
@@ -74,10 +88,22 @@
     position: relative;
     right: -89vw;
   }
+  @media screen and (max-width: 1400px) {
+    margin-top: 0;
+    position: relative;
+    right: 0;
+    margin-bottom: 11vw;
+    height: 100px;
+  }
 }
 .cu-more_nav {
   display: block;
   height: 9vw;
+}
+.dropdown-menu.show {
+  background: #ffffff00;
+  border-radius: 0;
+  border: 0;
 }
 .cu-mb_5 {
   margin-bottom: 1.5vw !important;
@@ -140,6 +166,13 @@
 .cu-banner_img_main {
   @media screen and (max-width: 1400px) {
     width: 100%;
+  }
+}
+
+// 移动端 offcanvas bottom logo {
+.cu-offcanvas_logo {
+  @media screen and (max-width: 1400px) {
+    width: 60px;
   }
 }
 

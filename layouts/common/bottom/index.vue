@@ -10,7 +10,7 @@
         <div class="offcanvas offcanvas-end" :class="offcanvasClass" tabindex="-1" id="offcanvasNavbar3" aria-labelledby="offcanvasNavbar3Label">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbar3Label">
-              <img src="/all-design.svg" alt="Jiangxue Design" />
+              <img src="/all-design.svg" class="cu-offcanvas_logo" alt="Jiangxue Design" />
             </h5>
             <button type="button" class="btn-close btn-close-back" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>

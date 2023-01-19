@@ -41,12 +41,12 @@
                   作品
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">平面设计</a></li>
+                  <li><a class="dropdown-item" href="#">工业设计</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">虚拟建模</a></li>
                 </ul>
               </li>
               <li class="nav-item mx-2">
@@ -60,7 +60,30 @@
               </li>
             </ul>
             <form class="d-flex mt-3 mt-lg-0" role="search">
-              <button class="btn" type="submit">中文</button>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mx-5">
+                <li class="nav-item ">
+                  <a class="nav-link" data-bs-toggle="collapse" aria-expanded="true" href="#vrExamples">
+                    <span class="sidenav-mini-icon"> V </span>
+                    <span class="sidenav-normal"> Virtual Reality <b class="caret"></b></span>
+                  </a>
+                  <div class="collapse show" id="vrExamples" style="">
+                    <ul class="nav nav-sm flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link " href="../../pages/dashboards/vr/vr-default.html">
+                          <span class="sidenav-mini-icon text-xs"> V </span>
+                          <span class="sidenav-normal"> VR Default </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="../../pages/dashboards/vr/vr-info.html">
+                          <span class="sidenav-mini-icon text-xs"> V </span>
+                          <span class="sidenav-normal"> VR Info </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
             </form>
           </div>
         </div>
