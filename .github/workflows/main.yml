@@ -12,7 +12,7 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: write
+  id-token: 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
 
 # Allow one concurrent deployment
 concurrency:
