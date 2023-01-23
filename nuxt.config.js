@@ -1,4 +1,4 @@
-import VueSetupExtend from 'vite-plugin-vue-setup-extend'
+import VueSetupExtend from "vite-plugin-vue-setup-extend";
 
 export default defineNuxtConfig({
   ssr: true,
@@ -15,29 +15,24 @@ export default defineNuxtConfig({
     },
   },
   generate: {
-    routes: ['/'],
-    dir: 'docs',
+    routes: ["/"],
   },
-  css: [
-      'bootstrap/dist/css/bootstrap.css',
-  ],
+  css: ["bootstrap/dist/css/bootstrap.css"],
   alias: {
     "@/*": "./*",
   },
-  modules: ['@nuxt/content'],
+  modules: ["@nuxt/content"],
   components: true,
   build: {
     terser: {
       terserOptions: {
         compress: {
-          drop_console: false // 生产环境移除
-        }
-      }
-    }
+          drop_console: false, // 生产环境移除
+        },
+      },
+    },
   },
   vite: {
-    plugins: [
-      VueSetupExtend()
-    ]
-  }
+    plugins: [VueSetupExtend()],
+  },
 });

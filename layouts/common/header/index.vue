@@ -6,16 +6,32 @@
           <img src="/logo.svg" alt="Jiangxue Design" />
         </a>
         <!--      面包屑-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <!--      抽屉导航-->
-        <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
               <img src="/logo.svg" alt="Jiangxue Design" />
             </h5>
-            <button type="button" class="btn-close btn-close-back" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close btn-close-back"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
           <!--        链接-->
           <div class="offcanvas-body">
@@ -37,14 +53,20 @@
                 <a class="nav-link" href="#">对话</a>
               </li>
               <li class="nav-item dropdown mx-2">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   作品
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">平面设计</a></li>
                   <li><a class="dropdown-item" href="#">工业设计</a></li>
                   <li>
-                    <hr class="dropdown-divider">
+                    <hr class="dropdown-divider" />
                   </li>
                   <li><a class="dropdown-item" href="#">虚拟建模</a></li>
                 </ul>
@@ -72,14 +94,12 @@
 </template>
 
 <script>
-
 export default {
-  name: 'test-header',
+  name: "test-header",
   mounted() {
     if (process.client) {
-      import('bootstrap')
-          .then(() => import('bootstrap'))
+      import("bootstrap").then(() => import("bootstrap"));
     }
-  }
-}
+  },
+};
 </script>

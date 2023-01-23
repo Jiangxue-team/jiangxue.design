@@ -5,8 +5,8 @@
   "scripts": {
     "bootstrap": "pnpm i --shamefully-hoist --no-frozen-lockfile",
     "dev": "nuxi dev",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview docs",
+    "generate": "nuxi generate docs",
+    "preview": "nuxi preview",
     "build": "nuxi build",
     "lint": "prettier --write .",
     "info": "nuxi info"
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0",
+    "@popperjs/core": "^2.11.6",
     "bootstrap": "5.3.0-alpha1",
     "swiper": "^8.4.5"
   }

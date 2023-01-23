@@ -21,6 +21,6 @@ export default {
   components: {
     TestBottom,
     TestHeader,
-  }
-}
+  },
+};
 </script>

@@ -5,5 +5,5 @@
 "director": "Hayao Miyazaki"
 "release_date": 2001
 "running_time": 124
-"image": 'https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301160219670.png'
+"image": "https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301160219670.png"
 ---
