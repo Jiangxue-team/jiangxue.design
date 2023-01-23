@@ -5,7 +5,7 @@
   "scripts": {
     "bootstrap": "pnpm i --shamefully-hoist --no-frozen-lockfile",
     "dev": "nuxi dev",
-    "generate": "nuxi generate docs",
+    "generate": "nuxi generate",
     "preview": "nuxi preview",
     "build": "nuxi build",
     "lint": "prettier --write .",
