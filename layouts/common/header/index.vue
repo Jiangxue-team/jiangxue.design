@@ -61,28 +61,7 @@
             </ul>
             <form class="d-flex mt-3 mt-lg-0" role="search">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mx-5">
-                <li class="nav-item ">
-                  <a class="nav-link" data-bs-toggle="collapse" aria-expanded="true" href="#vrExamples">
-                    <span class="sidenav-mini-icon"> V </span>
-                    <span class="sidenav-normal"> Virtual Reality <b class="caret"></b></span>
-                  </a>
-                  <div class="collapse show" id="vrExamples" style="">
-                    <ul class="nav nav-sm flex-column">
-                      <li class="nav-item">
-                        <a class="nav-link " href="../../pages/dashboards/vr/vr-default.html">
-                          <span class="sidenav-mini-icon text-xs"> V </span>
-                          <span class="sidenav-normal"> VR Default </span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="../../pages/dashboards/vr/vr-info.html">
-                          <span class="sidenav-mini-icon text-xs"> V </span>
-                          <span class="sidenav-normal"> VR Info </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
+                <a class="nav-link" aria-current="page" href="#">EN</a>
               </ul>
             </form>
           </div>

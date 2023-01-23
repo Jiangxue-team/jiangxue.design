@@ -15,7 +15,8 @@ export default defineNuxtConfig({
     },
   },
   generate: {
-    routes: ['/']
+    routes: ['/'],
+    dir: 'docs',
   },
   css: [
       'bootstrap/dist/css/bootstrap.css',

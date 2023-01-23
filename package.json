@@ -6,8 +6,7 @@
     "bootstrap": "pnpm i --shamefully-hoist --no-frozen-lockfile",
     "dev": "nuxi dev",
     "generate": "nuxi generate",
-    "preview": "nuxi preview .",
-    "server": "node .output/server/index.mjs",
+    "preview": "nuxi preview docs",
     "build": "nuxi build",
     "lint": "prettier --write .",
     "info": "nuxi info"
