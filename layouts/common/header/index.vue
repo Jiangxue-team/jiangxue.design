@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-xxl" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="/logo.svg" alt="Jiangxue Design" />
+          <img src="~/assets/images/ui/logo.svg" alt="Jiangxue Design" />
         </a>
         <!--      面包屑-->
         <button
@@ -24,7 +24,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
-              <img src="/logo.svg" alt="Jiangxue Design" />
+              <img src="~/assets/images/ui/logo.svg" alt="Jiangxue Design" />
             </h5>
             <button
               type="button"

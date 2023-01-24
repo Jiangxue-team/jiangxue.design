@@ -7,5 +7,5 @@
 "Designer": 清律、清铭酒
 "Producer": "-"
 "state": 2023 年 已交付
-"image": "https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301162153709.png"
+"image": "https://raw.githubusercontent.com/Jiangxue-team/jiangxue.design/main/assets/images/banner/1.png"
 ---

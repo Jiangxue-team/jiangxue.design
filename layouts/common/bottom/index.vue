@@ -15,7 +15,7 @@
         aria-controls="offcanvasNavbar3"
       >
         <img
-          src="/all-design.svg"
+          src="~/assets/images/ui/all-design.svg"
           class="cu-nav_bottom_more"
           alt="Jiangxue Design"
         />
@@ -31,7 +31,7 @@
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbar3Label">
             <img
-              src="/all-design.svg"
+              src="~/assets/images/ui/all-design.svg"
               class="cu-offcanvas_logo"
               alt="Jiangxue Design"
             />
@@ -48,38 +48,12 @@
           <div class="w-100 cu-more_nav">
             <div class="navbar-collapse collapse" id="navbarCollapse">
               <ul class="navbar-nav w-100" style="display: block">
-                <div
-                  class="row mb-5 text-center row row-cols-md-5 cu-more_list"
-                >
-                  <div class="cu-more">
+                <div class="row mb-5 text-center row row-cols-md-5 cu-more_list" v-if="equalQuery">
+                  <div class="cu-more" v-for="movie in equalQuery.slice(0, 5)" :key="movie.id">
                     <img
-                      src="https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301160219670.png"
+                      :src="movie.image"
                     />
-                    <p>天演舆情项目</p>
-                  </div>
-                  <div class="cu-more">
-                    <img
-                      src="https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301160219670.png"
-                    />
-                    <p>天演舆情项目</p>
-                  </div>
-                  <div class="cu-more">
-                    <img
-                      src="https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301160219670.png"
-                    />
-                    <p>天演舆情项目</p>
-                  </div>
-                  <div class="cu-more">
-                    <img
-                      src="https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301160219670.png"
-                    />
-                    <p>天演舆情项目</p>
-                  </div>
-                  <div class="cu-more">
-                    <img
-                      src="https://raw.githubusercontent.com/rhyme-qing/picture-bed/main/outher/202301160219670.png"
-                    />
-                    <p>天演舆情项目</p>
+                    <p>{{ movie.title }}</p>
                   </div>
                 </div>
                 <!--
@@ -96,7 +70,7 @@
                     -->
               </ul>
               <div class="d-flex align-items-center col-1 cu-more_button">
-                <img src="/show-more.svg" alt="Jiangxue Design" />
+                <img src="~/assets/images/ui/show-more.svg" alt="Jiangxue Design" />
               </div>
             </div>
           </div>

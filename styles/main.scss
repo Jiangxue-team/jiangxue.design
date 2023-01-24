@@ -108,7 +108,7 @@
   margin-bottom: 1.5vw !important;
 }
 .cu-background_more {
-  background-image: url("/public/more-back.png");
+  background-image: url("~/assets/images/ui/background/more-back.png");
   background-size: cover;
   padding: 0 !important;
 }
@@ -131,7 +131,7 @@
 // Jiangxue Design logo
 .cu-banner_page_num {
   position: absolute;
-  background-image: url(/public/banner-page_number.svg);
+  background-image: url(~/assets/images/ui/background/banner-page_number.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,7 +178,7 @@
 // Team 初衷
 .cu-banner_page_font {
   position: absolute;
-  background-image: url(/public/banner-page_font.svg);
+  background-image: url(~/assets/images/ui/background/banner-page_font.svg);
   background-position: center;
   background-repeat: no-repeat;
   /* height: auto; */
@@ -197,7 +197,7 @@
   font-size: 18px;
   height: 37vw !important;
   background: #ffffff;
-  background-image: url("/public/banner-back.png");
+  background-image: url("~/assets/images/ui/background/banner-back.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
