@@ -1,10 +1,3 @@
-<script setup>
-// 使用 useAsyncData 函数发起异步请求
-const { data: equalQueryBanner } = await useAsyncData("equal1", () => {
-  // 返回数据，也可以（.where({ director: 'Hayao Miyazaki' }) 来进行过滤）
-  return queryContent("banner/").find();
-});
-</script>
 <template>
   <div class="cu-banner d-flex align-items-center justify-content-center">
     <swiper class="mySwiper">
@@ -51,20 +44,13 @@ const { data: equalQueryBanner } = await useAsyncData("equal1", () => {
     </swiper>
   </div>
 </template>
-<script>
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from "swiper/vue";
 
-// Import Swiper styles
-import "swiper/css";
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    return {};
-  },
-};
+<script setup>
+  import { Swiper, SwiperSlide } from "swiper/vue";
+  import "swiper/css";
+  // 使用 useAsyncData 函数发起异步请求
+  const { data: equalQueryBanner } = await useAsyncData("equal1", () => {
+    // 返回数据，也可以（.where({ director: 'Hayao Miyazaki' }) 来进行过滤）
+    return queryContent("banner/").find();
+  });
 </script>

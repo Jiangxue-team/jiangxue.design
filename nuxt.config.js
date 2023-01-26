@@ -2,6 +2,7 @@ import VueSetupExtend from "vite-plugin-vue-setup-extend";
 
 export default defineNuxtConfig({
   ssr: true,
+  payloadExtraction: false,
   app: {
     head: {
       meta: [

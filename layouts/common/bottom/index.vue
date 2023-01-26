@@ -1,7 +1,7 @@
 <template>
   <!-- 创建导航栏并固定底部，在屏幕宽度小于 navbar-expand-sm 1400px  时将导航栏切换成折叠模式。-->
   <nav
-    class="navbar fixed-bottom navbar-expand-xxl cu-background_more"
+    class="navbar fixed-bottom navbar-expand-xxl cu-background_more footer-bottom"
     aria-label="Offcanvas navbar large"
   >
     <div class="container-fluid">
@@ -86,6 +86,18 @@ const { data: equalQuery } = await useAsyncData("equal", () => {
   // 返回 /more 目录下的数据，也可以（.where({ director: 'Hayao Miyazaki' }) 来进行过滤）
   return queryContent("more/").find();
 });
+
+const offcanvasClass = ''
+
+function toggleOffcanvas() {
+
+}
+</script>
+
+<script>
+export default {
+  name: 'LayoutBottom',
+}
 </script>
 
 <style scoped lang="scss"></style>

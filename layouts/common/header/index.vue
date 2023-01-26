@@ -95,7 +95,7 @@
 
 <script>
 export default {
-  name: "test-header",
+  name: "LayoutHeader",
   mounted() {
     if (process.client) {
       import("bootstrap").then(() => import("bootstrap"));

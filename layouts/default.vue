@@ -1,26 +1,18 @@
 <template>
-  <div class="test-layout">
+  <div class="layout-container">
     <header>
-      <TestHeader />
+      <LayoutHeader />
     </header>
-    <main>
+    <main class="layout-main">
       <slot />
     </main>
-    <bottom>
-      <TestBottom />
-    </bottom>
+    <footer class="layout-footer">
+      <LayoutBottom />
+    </footer>
   </div>
 </template>
 
-<script>
-import TestHeader from "./common/header";
-import TestBottom from "./common/bottom";
-
-export default {
-  name: "TestLayout",
-  components: {
-    TestBottom,
-    TestHeader,
-  },
-};
+<script setup>
+  import LayoutHeader from "./common/header";
+  import LayoutBottom from "./common/bottom";
 </script>
