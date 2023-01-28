@@ -1,7 +1,7 @@
 <template>
   <!-- 创建导航栏并固定底部，在屏幕宽度小于 navbar-expand-sm 1400px  时将导航栏切换成折叠模式。-->
   <nav
-    class="navbar fixed-bottom navbar-expand-xxl cu-background_more footer-bottom"
+    class="navbar navbar-expand-xxl cu-background_more footer-bottom"
     aria-label="Offcanvas navbar large"
   >
     <div class="container-fluid">
@@ -48,7 +48,7 @@
           <div class="w-100 cu-more_nav">
             <div class="navbar-collapse collapse" id="navbarCollapse">
               <ul class="navbar-nav w-100" style="display: block">
-                <div class="row mb-5 text-center row row-cols-md-5 cu-more_list" v-if="equalQuery">
+                <div class="row text-center row-cols-md-5 cu-more_list" v-if="equalQuery">
                   <div class="cu-more" v-for="movie in equalQuery.slice(0, 5)" :key="movie.id">
                     <img
                       :src="movie.image"

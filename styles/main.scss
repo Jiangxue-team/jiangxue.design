@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
 }
 
 .layout-main {
@@ -16,7 +17,15 @@
 .layout-footer {
   width: 100%;
   max-height: 150px;
-  height: 50px;
+}
+
+.footer-bottom {
+  padding: 0;
+  height: 100%;
+
+  .navbar-collapse {
+    height: 100%;
+  }
 }
 
 .dropdown-toggle::after {
@@ -65,21 +74,18 @@
 .cu-more {
   @media screen and (max-width: 1400px) {
     img {
-      width: 250px !important;
+      width: 250px;
     }
     p {
-      width: 250px !important;
-      font-size: 18px !important;
-      margin-bottom: 3rem;
-      margin-top: 9px !important;
+      width: 250px;
+      font-size: 18px;
     }
   }
   p {
-    margin-top: 0 !important;
     text-align: left;
     font-size: 0.9vw;
     height: 1.7vw;
-    padding-top: 0.5vw;
+    line-height: 1.7vw;
     width: 13vw;
   }
   img {
@@ -139,17 +145,18 @@
 // banner 主体限制
 .cu-banner {
   width: 100%;
-  margin-top: calc(100vw * 0.1);
-
-  @media screen and (max-width: 1400px) {
-    height: 100%;
-  }
-  @media screen and (max-width: 1300px) {
-    height: 80%;
-  }
-  @media screen and (max-width: 1000px) {
-    height: 91%;
-  }
+  height: 100%;
+  vertical-align: middle;
+  //
+  //@media screen and (max-width: 1400px) {
+  //  height: 100%;
+  //}
+  //@media screen and (max-width: 1300px) {
+  //  height: 80%;
+  //}
+  //@media screen and (max-width: 1000px) {
+  //  height: 91%;
+  //}
 }
 
 // Jiangxue Design logo
