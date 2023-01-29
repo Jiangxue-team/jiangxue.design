@@ -98,6 +98,8 @@
 
 .cu-more_list {
   padding-left: 1vw;
+  bottom: 0vw !important;
+  position: absolute;
   @media screen and (max-width: 1440px) {
     width: 80%;
   }
@@ -138,8 +140,8 @@
 }
 
 .cu-background_more {
-  //background-image: url("~/assets/images/ui/background/more-back.png");
-  //background-size: cover;
+  background-image: url("~/assets/images/ui/background/more-back.png");
+  background-size: cover;
 }
 
 // banner 主体限制
