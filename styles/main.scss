@@ -73,18 +73,22 @@
 
 .cu-more {
   @media screen and (max-width: 1400px) {
+    width: 100%;
+    height: auto;
     img {
-      width: 250px;
+      width: 100% !important;
     }
     p {
-      width: 250px;
-      font-size: 18px;
+      width: 100% !important;
+      font-size: 18px !important;
+      height: 5vw !important;
+      line-height: inherit !important;
     }
   }
   p {
     text-align: left;
     font-size: 0.9vw;
-    height: 1.7vw;
+    height: 1.8vw;
     line-height: 1.7vw;
     width: 13vw;
   }
@@ -104,7 +108,7 @@
     width: 80%;
   }
   @media screen and (max-width: 1400px) {
-    display: block;
+    display: contents;
   }
 }
 
@@ -235,21 +239,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-
-  @media screen and (max-width: 1440px) {
-    height: 60vw !important;
-  }
   @media screen and (max-width: 1400px) {
-    height: 80vw !important;
-  }
-  @media screen and (max-width: 1300px) {
-    height: 40vw !important;
-  }
-  @media screen and (max-width: 1024px) {
-    height: 60vw !important;
-  }
-  @media screen and (max-width: 768px) {
-    height: 100vw !important;
+    height: 50vw !important;
   }
 }
 
